@@ -1,4 +1,4 @@
-# Docker for Laravel development
+# Docker for Laravel and Vue development
 
 
 ## Get docker files
@@ -35,7 +35,7 @@ $ docker-compose exec app laravel new
 $ cp .env.example .env
 ```
 
-## use composer
+## Use composer
 
 ```
 $ docker-compose up -d
@@ -46,7 +46,11 @@ http://localhost
 
 ## Install Vue
 
-Install Vue:
+ ```
+ $ docker-compose exec app bash
+  ```
+
+Install node:
  ```
  # npm install
  ```
@@ -61,4 +65,12 @@ Build production:
 Watch: 
 ```
  # npm run watch
+```
+
+## Use migration
+
+```
+ $ docker-compose exec app bash
+
+ # php artisan migrate
 ```
