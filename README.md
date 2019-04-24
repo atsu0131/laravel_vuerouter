@@ -1,7 +1,6 @@
 # Docker for Laravel and Vue development
 
 
-## Get docker files
 ```
 $ ls 
 
@@ -41,6 +40,7 @@ $ cp .env.example .env
 $ docker-compose up -d
 $ composer update
 ```
+## Access localhost
 
 http://localhost
 
