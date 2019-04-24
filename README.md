@@ -2,8 +2,9 @@
 
 
 ## Get docker files
-
+```
 $ ls 
+
 docker                  docker-compose.yml
 ```
 
@@ -11,7 +12,9 @@ docker                  docker-compose.yml
 
 ```
 $ docker-compose up -d --build
+```
 
+```
 $ docker-compose ps
       Name                     Command              State                 Ports
 ---------------------------------------------------------------------------------------------
@@ -28,23 +31,34 @@ $ docker-compose exec app laravel new
 
 ## Access Laravel App
 
+```
 $ cp .env.example .env
+```
 
 ## use composer
 
-
+```
 $ docker-compose up -d
 $ composer update
+```
 
 http://localhost
 
 ## Install Vue
 
 Install Vue:
- npm install
+ ```
+ # npm install
+ ```
 Build dev: 
-npm run dev
+```
+ # npm run dev
+```
 Build production: 
-npm run production
+```
+ # npm run production
+```
 Watch: 
-npm run watch
+```
+ # npm run watch
+```
