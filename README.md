@@ -74,3 +74,14 @@ Watch:
 
  # php artisan migrate
 ```
+
+## When you change Vue code
+
+```
+ $ docker-compose exec app bash
+
+ # npm run dev
+
+ # npm run watch
+
+```
