@@ -12,6 +12,13 @@
         </div>
     </div>
 </template>
+
+<style>
+body{
+background-color: white;
+};
+</style>
+
 <script>
     export default {}
 </script>

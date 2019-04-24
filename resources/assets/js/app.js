@@ -5,6 +5,11 @@ import VueRouter from 'vue-router';
 // vue-routerの使用宣言  
 Vue.use(VueRouter);
 
+import axios from 'axios'
+import VueAxios from 'vue-axios'
+ 
+Vue.use(VueAxios, axios)
+
 
 import App from './App.vue';
 
@@ -12,8 +17,8 @@ import App from './App.vue';
 
 import About from './components/About.vue';
 import Test from './components/Test.vue';                                                                                                        
-require('./bootstrap');                                                                                                                                              
-Window.Vue = require('vue');                                                                                                                                         
+// require('./bootstrap');                                                                                                                                              
+// Window.Vue = require('vue');                                                                                                                                         
                                                                                                                                             
 // ルーティングしない場合のコンポーネントの宣言  
 Vue.component('example-component', require('./components/ExampleComponent.vue'));   
@@ -49,7 +54,9 @@ new Vue(Vue.util.extend({
   router
 }, App)).$mount('#app');
 
-
+// const app = new Vue({
+//   router
+// }).$mount('#app')
 
 
 

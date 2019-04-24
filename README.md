@@ -1,18 +1,7 @@
 # Docker for Laravel development
 
-## Make develop directory
-
-```
-$ mkdir laravel-app
-$ cd laravel-app/
-```
 
 ## Get docker files
-
-```
-$ wget -O docker.zip https://github.com/yusukeito58/docker-for-laravel-development/archive/master.zip  \
-    && unzip docker.zip && mv docker-for-laravel-development-master/* ./ \
-    && rm -rf docker.zip docker-for-laravel-development-master
 
 $ ls 
 docker                  docker-compose.yml
@@ -39,11 +28,23 @@ $ docker-compose exec app laravel new
 
 ## Access Laravel App
 
+$ cp .env.example .env
+
+## use composer
+
+
+$ docker-compose up -d
+$ composer update
+
 http://localhost
 
+## Install Vue
 
-
-Install Vue: npm install
-Build dev: npm run dev
-Build production: npm run production
-Watch: npm run watch
+Install Vue:
+ npm install
+Build dev: 
+npm run dev
+Build production: 
+npm run production
+Watch: 
+npm run watch
